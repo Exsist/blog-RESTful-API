@@ -1,0 +1,16 @@
+Options +FollowSymLinks
+IndexIgnore */*
+#RewriteEngine on
+
+#RewriteCond %{REQUEST_URI} ^/$
+#RewriteRule ^(.*)$ /kpk-m1wsrru/$1 [R=301]
+
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^kpk-m1wsrru/(.*)$ /index.php
+
+#RewriteEngine on
+#RewriteCond %{REQUEST_URI} ^/$
+#RewriteRule ^(.*)$ /index_new.php
